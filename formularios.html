@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://httpbin.org/get">
+        <div>
+        <label for="name">Nombre</label>
+        <input type="text" name="nombre" id="name" maxlength="10">
+        </div>
+        <div>
+        <label for="apellido">Apellido </label>
+        <input type="text" name="apellido" id="apellido">
+        </div>
+        <div>
+        <label for="población"> Población</label>
+        <input type="text" name="población" id="población" value="Manacor">
+        </div>
+        <div>
+        <label for="Fecha de nacimiento"> Fecha de nacimiento</label>
+        <input type="date" name="Fecha de nacimiento" id="Fecha de nacimiento">
+        </div>
+        <div>
+        <label for="number"> # Camiseta</label>
+        <input type="number" name="number" id="number"  min="1" max="20">
+        </div>
+        <div>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+        <label for="color">Color preferido</label>
+        <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <label for="cansamentAlumne">Nivell de cansament</label>
+            <input type="range" name="cansamentAlumne" id="cansamentAlumne">
+        </div>
+        <div>
+            <p>Hobbies</p>
+            <label for="natacion">natacion</label>
+            <input type="radio" name="hobbie" id="natacion">
+        </div>  
+        <div>
+             <label for="futbol">futbol</label>
+            <input type="radio" name="hobbie" id="futbol">
+        </div>  
+           
+        
+        <div>
+            <label for="natacion">natacion</label>
+            <input type="radio" name="hobbie" id="natacion">
+        </div>
+        <div>
+            <p>tria el teu estat civil</p>
+            <input type="radio" name="estat civil" id="soltero" value="S">
+            <label for="soltero">Soltero</label><br>
+
+            <input type="radio" name="estat civil" id="casado" value="C">
+            <label for="casado">casado</label><br>
+        </div>
+
+    
+        <div>
+            <label for="pais"> pais</label>
+            <select name="pais" id="pais" multiple>
+                <option value="es">España</option>
+                <option value="ad">Andorra</option>
+                <option value="It">Italia</option>
+            </select>
+        </div>
+
+        <div>
+            <textarea name="descripcio" id="descripcio"></textarea>
+            <label for="descripcio"></label>
+        </div>
+
+        <button>Enviar datos</button>
+    </form>
+</body>
+</html>
+
